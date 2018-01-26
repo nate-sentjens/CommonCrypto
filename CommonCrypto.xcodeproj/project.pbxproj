@@ -188,7 +188,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				"ENABLE_BITCODE[sdk=appletvos*]" = YES;
+				"ENABLE_BITCODE[sdk=appletvsimulator*]" = YES;
+				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
+				"ENABLE_BITCODE[sdk=iphonesimulator*]" = YES;
+				"ENABLE_BITCODE[sdk=watchos*]" = YES;
+				"ENABLE_BITCODE[sdk=watchsimulator*]" = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -240,7 +246,13 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
+				"ENABLE_BITCODE[sdk=appletvos*]" = YES;
+				"ENABLE_BITCODE[sdk=appletvsimulator*]" = YES;
+				"ENABLE_BITCODE[sdk=iphoneos*]" = YES;
+				"ENABLE_BITCODE[sdk=iphonesimulator*]" = YES;
+				"ENABLE_BITCODE[sdk=watchos*]" = YES;
+				"ENABLE_BITCODE[sdk=watchsimulator*]" = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -272,7 +284,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -298,7 +309,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
